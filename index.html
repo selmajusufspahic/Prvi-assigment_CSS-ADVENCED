@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Napredni CSS - Zadatak 1</title>
+<style>
+  
+        a[href^="https://www.google.com"] {
+        color:green
+    }
+  
+        a[href^="https://www.link-group.eu"] {
+        color:red
+    }
+        
+        #first-div > p::after {
+
+        content: "NEW";
+        color: yellow;
+    }
+         #second-div > p:nth-child(2n+1) {
+       
+        color: blue;
+    } 
+    
+        #second-div > p:nth-child(2n+2) {
+       
+       color: red;
+   } 
+    p:nth-child(8):hover {
+            font-style: italic;
+
+        }
+
+
+</style>
+ 
+
+
+</head>
+
+<body>
+    
+    <h1>Glavni naslov</h1>
+
+    <p>Stavak 1</p>
+
+    <a href="https://www.google.com/">Google</a>
+    <a href="https://www.google.com/doodles">Google doodles </a>
+    <a href="https://www.link-group.eu/">Goto Link Group</a>
+
+        <div id="first-div"> 
+    <h2>Podnaslov</h2>
+    <p>Stavak 2</p>
+    <p>Stavak 3</p>
+
+
+        <div id="second-div">
+    
+    <h3>Podnaslov</h3>
+   
+    <p>Stavak 4</p>
+    <p>Stavak 5</p>
+    <p>Stavak 6</p>
+    <p>Stavak 7</p>
+    <p>Stavak 8</p>
+
+        </div>
+        </div>
+
+
+    <p>Stavak 9</p>
+    <p>Stavak 10</p>
+    
+
+</body>
+
+</html>
